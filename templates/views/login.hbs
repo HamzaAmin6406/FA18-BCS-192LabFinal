@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab final</title>
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+        <header>
+            {{>navbar}}
+        </header></br></br></br>
+     <section class="login" id="login">
+      <h1 class="heading">Login</h1>
+      <div class="row">
+        <form action="/login" method="POST" data-aos="fade-right">
+          <input
+            type="email"
+            placeholder="your email"
+            class="box"
+            name="email"
+          />
+          <input
+            type="password"
+            placeholder="your password"
+            class="box"
+            name="password"
+          />
+          <input type="submit" value="Sign in" class="btn" />
+        </form>
+
+        <div class="image" data-aos="fade-left">
+          <img src="images/login.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    ></script>
+
+    <!-- jquery cdn link  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+
+    <!-- custom js file link  -->
+  
+
+    <!-- initializing aos  -->
+
+    <script>
+      AOS.init({ delay: 400, duration: 1000, });
+    </script>
+
+  </body>
+</html>
